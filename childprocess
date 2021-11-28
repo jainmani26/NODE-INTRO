@@ -1,0 +1,20 @@
+let cp = require("child_process");
+
+//To open calculator
+// console.log("Trying to open calculator");
+// cp.execSync("calc");
+// console.log("Opened calculator");
+
+//to open VS Code
+// console.log("Trying to open VS Code");
+// cp.execSync("code");
+// console.log("Opened VS Code");
+
+//To open any website
+console.log("Trying to open pepcoding portal");
+cp.execSync("start chrome https://www.pepcoding.com");
+console.log("Opened pepcoding portal");
+
+//To run any file in node js
+let output = cp.execSync("node abc.js");
+console.log("output ✔ "+ output);
