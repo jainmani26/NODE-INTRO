@@ -1,0 +1,52 @@
+//fileSystem
+//files -> create, read, update, delete
+let fs = require("fs");
+
+//read
+// let buffer = fs.readFileSync("abc.js");
+// console.log("bin data "+buffer);
+
+//create
+// fs.openSync("abc.txt","w");
+
+//To replace contenet of a file
+// fs.writeFileSync("abc.txt", "I AM HAPPY");
+
+//To update content ormappend content
+// fs.appendFileSync("abc.txt ", "Why you are happy?" );
+
+//To create a directory
+// fs.mkdirSync("MyDirectory");
+
+//fs.writeFileSync("MyDirectory/myFile.txt", "My Content");
+// let content = fs.readdirSync("MyDirectory");
+// console.log(content);
+// for(let i = 0; i<content.length; i++)
+// {
+//     console.log("file ",content[i], "is removed");
+//     //remove file
+//     fs.unlinkSync("MyDirectory/" + content[i]);
+// }
+
+//remove folder
+//fs.rmdirSync("MyDirectory");
+
+//fs.existSync -> If file exists at a path -> true/false
+// let doesPathExist = fs.existsSync("abc.txt");
+// console.log(doesPathExist);
+// let doesPathExist = fs.existsSync("abcd.txt");
+// console.log(doesPathExist);
+
+//fs.lstatSync -> fs.lstatSync
+//let detailsObj = fs.lstatSync(_dirname + "\\fileSystem.js");
+//let ans = detailsObj.isFile();
+//console.log(ans);
+//ans = detailsObj.isDirectory();
+//console.log(ans);
+
+// for(let i = 1; i<=10; i++)
+// {
+//     let dirPathToMake = `Lecture-${i}`;
+//     fs.mkdirSync(dirPathToMake);
+//     fs.writeFileSync(dirPathToMake + "\\" + "readme.md", `# readme for ${dirPathToMake}`);
+// }
