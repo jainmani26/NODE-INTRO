@@ -1,0 +1,9 @@
+//Operating System Features
+let os = require("os");
+// console.log(os.arch());
+// console.log(os.platform());
+
+//Gives info related to wi-fi
+// console.log(os.networkInterfaces());
+
+console.log(os.cpus());
